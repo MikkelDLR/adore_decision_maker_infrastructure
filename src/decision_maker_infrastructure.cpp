@@ -121,7 +121,7 @@ DecisionMakerInfrastructure::plan_with_pid()
   planner::MultiAgentPID pid_planner;
 
   // This planner modifies the set in-place
-  pid_planner.plan_trajectories( latest_traffic_participant_set );
+  pid_planner.plan_trajectories_and_maneuvers( latest_traffic_participant_set );
 
   return latest_traffic_participant_set;
 }
